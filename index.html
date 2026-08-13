@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Chain — 5 Minute Word Game | Focus Break Games</title>
+<meta name="description" content="Keep a word chain alive for 5 minutes — each word starts with the last letter of the one before it. Built for study and work breaks, and it ends the moment your break does.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="wordmark">Focus Break Games</a>
+</header>
+
+<main class="game-page">
+  <div class="game-frame">
+
+    <div class="timer-block">
+      <p class="timer-label">Break ends in</p>
+      <div class="timer-digits" id="timer-digits">5:00</div>
+      <div class="timer-bar-track"><div class="timer-bar-fill" id="timer-fill"></div></div>
+    </div>
+
+    <p class="game-title">Word Chain</p>
+
+    <div id="play-area">
+      <p class="chain-current">Current word<br><b id="current-word">—</b></p>
+
+      <form id="chain-form" class="scramble-form">
+        <input class="text-input" id="chain-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="next word" aria-label="Next word in the chain">
+        <button class="btn" type="submit">Add</button>
+      </form>
+      <p class="inline-error" id="inline-error"></p>
+
+      <div class="chain-trail" id="chain-trail" aria-label="Word chain so far"></div>
+
+      <div class="stat-row">
+        <div><b id="stat-chain">0</b>Chain length</div>
+      </div>
+    </div>
+
+    <div id="results" class="results hidden">
+      <p class="headline">Nice break.</p>
+      <p class="sub">Time to focus.</p>
+      <div class="result-stats">
+        <div class="stat"><b id="result-chain">0</b><span>Word chain</span></div>
+        <div class="stat"><b id="result-streak">0</b><span>Longest streak</span></div>
+      </div>
+      <a class="back-to-focus" href="/">Back to focus</a>
+      <br>
+      <a class="take-another" href="/">Take another break later</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Focus Break Games</p>
+  <div class="footer-links">
+    <a href="/study-break-games/">Study break games</a>
+    <a href="/pomodoro-break-games/">Pomodoro break games</a>
+    <a href="/memory-game/">Memory game</a>
+    <a href="/word-scramble-game/">Word scramble</a>
+  </div>
+</footer>
+
+<script src="../js/timer.js"></script>
+<script src="../js/wordchain.js"></script>
+</body>
+</html>

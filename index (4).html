@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory Rush — 1 Minute Memory Game | Focus Break Games</title>
+<meta name="description" content="Play a 1-minute memory game designed for study and work breaks. The game automatically ends when your break does, so you can get back to focus.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="wordmark">Focus Break Games</a>
+</header>
+
+<main class="game-page">
+  <div class="game-frame">
+
+    <div class="timer-block">
+      <p class="timer-label">Break ends in</p>
+      <div class="timer-digits" id="timer-digits">1:00</div>
+      <div class="timer-bar-track"><div class="timer-bar-fill" id="timer-fill"></div></div>
+    </div>
+
+    <p class="game-title">Memory Rush</p>
+
+    <div id="play-area">
+      <div class="memory-grid" id="memory-grid"></div>
+      <p class="game-status" id="game-status">Get ready…</p>
+      <div class="stat-row">
+        <div><b id="stat-level">0</b>Level reached</div>
+        <div><b id="stat-streak">0</b>Best streak</div>
+      </div>
+    </div>
+
+    <div id="results" class="results hidden">
+      <p class="headline">Break complete</p>
+      <p class="sub">Time to focus.</p>
+      <div class="result-stats">
+        <div class="stat"><b id="result-level">0</b><span>Level reached</span></div>
+        <div class="stat"><b id="result-streak">0</b><span>Best streak</span></div>
+      </div>
+      <a class="back-to-focus" href="/">Back to focus</a>
+      <br>
+      <a class="take-another" href="/">Take another break later</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Focus Break Games</p>
+  <div class="footer-links">
+    <a href="/study-break-games/">Study break games</a>
+    <a href="/pomodoro-break-games/">Pomodoro break games</a>
+    <a href="/word-scramble-game/">Word scramble</a>
+    <a href="/word-chain-game/">Word chain</a>
+  </div>
+</footer>
+
+<script src="../js/timer.js"></script>
+<script src="../js/memory.js"></script>
+</body>
+</html>

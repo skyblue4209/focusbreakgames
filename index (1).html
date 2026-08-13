@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Scramble — 3 Minute Word Game | Focus Break Games</title>
+<meta name="description" content="Unscramble as many words as you can in 3 minutes. A fresh puzzle every time, built for study and work breaks — the game ends the moment your break does.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="wordmark">Focus Break Games</a>
+</header>
+
+<main class="game-page">
+  <div class="game-frame">
+
+    <div class="timer-block">
+      <p class="timer-label">Break ends in</p>
+      <div class="timer-digits" id="timer-digits">3:00</div>
+      <div class="timer-bar-track"><div class="timer-bar-fill" id="timer-fill"></div></div>
+    </div>
+
+    <p class="game-title">Word Scramble</p>
+
+    <div id="play-area">
+      <div class="scramble-word" id="scramble-word">—</div>
+      <form class="scramble-form" id="scramble-form">
+        <input class="text-input" id="scramble-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type the word" aria-label="Your answer">
+        <button class="btn" type="submit">Submit</button>
+      </form>
+      <p style="margin-top:14px;">
+        <button class="btn ghost" id="skip-btn" type="button">Skip</button>
+      </p>
+      <div class="stat-row">
+        <div><b id="stat-solved">0</b>Solved</div>
+      </div>
+    </div>
+
+    <div id="results" class="results hidden">
+      <p class="headline">Break complete</p>
+      <p class="sub">Time to focus.</p>
+      <div class="result-stats">
+        <div class="stat"><b id="result-solved">0</b><span>Solved</span></div>
+        <div class="stat"><b id="result-skipped">0</b><span>Skipped</span></div>
+        <div class="stat"><b id="result-accuracy">0%</b><span>Accuracy</span></div>
+      </div>
+      <a class="back-to-focus" href="/">Back to focus</a>
+      <br>
+      <a class="take-another" href="/">Take another break later</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>Focus Break Games</p>
+  <div class="footer-links">
+    <a href="/study-break-games/">Study break games</a>
+    <a href="/pomodoro-break-games/">Pomodoro break games</a>
+    <a href="/memory-game/">Memory game</a>
+    <a href="/word-chain-game/">Word chain</a>
+  </div>
+</footer>
+
+<script src="../js/timer.js"></script>
+<script src="../js/scramble.js"></script>
+</body>
+</html>
